@@ -82,4 +82,33 @@
 # print(name)
 
 #input() = A function that prompts the user to enter data 
-            Returns the enetered data as string
+#            Returns the enetered data as string
+
+
+
+# name = input("What is your name?: ")
+# age = int(input("How old are you?: "))
+
+# # age = int(age) # typecasting age from string to integerm
+# age = age + 1
+
+# print(f"Hello {name}!")
+# print("Happy Birthday!")
+# print(f"You are {age} years old")
+
+# Exercise 1 Rectangle Area Calculator
+
+# length = float(input("Enter the length of the rectangle: "))
+# width = float(input("Enter the width of the rectangle: "))
+
+# area = length * width
+
+# print(f"The area of the rectangle is: {area}")
+
+# Exercise 2 Shoping Cart Program
+item = input("Enter the item you want to buy: ")
+price = float(input("Enter the price of the item: "))
+quantity = int(input("Enter the quantity: "))
+
+total_cost = price * quantity
+print(f"You are buying {quantity} {item} (s) for a total of ${total_cost:.2f}")
