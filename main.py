@@ -63,16 +63,23 @@
 #Typecasting = The process of converting a variable from one data type to another
 #               str(), int(), float(), bool()
 
-name = "Muliro"
-age = 25
-gpa = 3.2
-is_student = True
+# name = "Muliro"
+# age = 25
+# gpa = 3.2
+# is_student = True
 
-# print(type(is_student))
+# # print(type(is_student))
+# name = bool(name)
+# gpa = int(gpa)
+# print(type(gpa))
 
-gpa = int(gpa)
-print(type(gpa))
 
-age = float(age)
-print(type(age))
-print(age)
+
+# age = float(age)
+# print(type(age))
+# print(age)
+
+# print(name)
+
+#input() = A function that prompts the user to enter data 
+            Returns the enetered data as string
