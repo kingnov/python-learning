@@ -38,12 +38,12 @@
 # print(f"You ran {distance} km")
 
 # Boolean
-is_student = False
-for_sale = False
-is_online = True
+# is_student = False
+# for_sale = False
+# is_online = True
 
 
-print(f"Are you a student?: {is_student}")
+# print(f"Are you a student?: {is_student}")
 
 # if is_student:
 #     print("You are a student")
@@ -55,7 +55,24 @@ print(f"Are you a student?: {is_student}")
 # else:
 #     print("This car is not available for sale")
 
-if is_online:
-    print("You are online")
-else:
-    print("You are offline")
+# if is_online:
+#     print("You are online")
+# else:
+#     print("You are offline")
+
+#Typecasting = The process of converting a variable from one data type to another
+#               str(), int(), float(), bool()
+
+name = "Muliro"
+age = 25
+gpa = 3.2
+is_student = True
+
+# print(type(is_student))
+
+gpa = int(gpa)
+print(type(gpa))
+
+age = float(age)
+print(type(age))
+print(age)
