@@ -106,9 +106,23 @@
 # print(f"The area of the rectangle is: {area}")
 
 # Exercise 2 Shoping Cart Program
-item = input("Enter the item you want to buy: ")
-price = float(input("Enter the price of the item: "))
-quantity = int(input("Enter the quantity: "))
 
-total_cost = price * quantity
-print(f"You are buying {quantity} {item} (s) for a total of ${total_cost:.2f}")
+
+# Madlibs game
+# word game where you create a story
+# by filling in blanks with random words
+
+
+adjective1 = input("Enter an adjective (description): ")
+noun1 = input("Enter a noun (person, place, or thing): ")
+adjective2 = input ("Enter an adjective (description): ")
+verb1 = input("Enter a verb (action): ")
+adjective3 = input("Enter an adjective (description): ")
+
+
+print(f"Today I went to a {adjective1} zoo.")
+print(f"In an exhibit, I saw a {noun1}")
+print(f"{noun1} was {adjective2} and {verb1}")
+print(f"I was {adjective3}")
+
+
