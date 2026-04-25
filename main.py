@@ -113,16 +113,82 @@
 # by filling in blanks with random words
 
 
-adjective1 = input("Enter an adjective (description): ")
-noun1 = input("Enter a noun (person, place, or thing): ")
-adjective2 = input ("Enter an adjective (description): ")
-verb1 = input("Enter a verb (action): ")
-adjective3 = input("Enter an adjective (description): ")
+
+# adjective1 = input("Enter an adjective (description): ")
+# noun1 = input("Enter a noun (person, place, or thing): ")
+# adjective2 = input ("Enter an adjective (description): ")
+# verb1 = input("Enter a verb (action): ")
+# adjective3 = input("Enter an adjective (description): ")
 
 
-print(f"Today I went to a {adjective1} zoo.")
-print(f"In an exhibit, I saw a {noun1}")
-print(f"{noun1} was {adjective2} and {verb1}")
-print(f"I was {adjective3}")
+# print(f"Today I went to a {adjective1} zoo.")
+# print(f"In an exhibit, I saw a {noun1}")
+# print(f"{noun1} was {adjective2} and {verb1}")
+# print(f"I was {adjective3}!")
+
+#Arithmetic Operator
+
+# friends = 5
+# friends = friends + 1
+# print(friends)
+
+# friends = friends - 2
+# print(friends)
+
+# friends = friends * 3
+# print(friends)
+
+# friends = friends / 2
+# print(friends)
+
+# friends = friends ** 2
+# print(friends)
+
+# friends = friends % 2
+# print(friends)
+
+# x = 3.14
+# y = -4
+# z = 5
+
+# results = round(x)
+# results = abs(y)
+# results = pow(z, 2)
+# results = max(x, y, z)
+# print(results)
+
+# Functions from the math class
+import math
+# math.pi
+# print(math.pi)
+
+# x = 9.1 
+# results = math.sqrt(x)
+# results = math.ceil(x) # rounds up to the nearest integer
+# results = math.floor(x) # rounds down to the nearest integer
+
+# print(results)
+
+# radius = float(input("Enter the radius of the circle: "))
+# area = math.pi * math.pow(radius, 2)
+# print(f"The area of the circle is: {area}")
+
+# circumference = 2 * math.pi * radius
+# print(f"The circumference of the circle is: {round(circumference, 2)}")
+
+
+hyp = float(input("Enter the length of the hypotenuse: "))
+
+b = float(input("enter the length of the base: "))
+
+h = math.sqrt(math.pow(hyp, 2) - math.pow(b, 2))
+print(f"The length of the height is: {round(h, 2)}")
+
+
+
+
+
+
+
 
 
