@@ -177,18 +177,55 @@ import math
 # print(f"The circumference of the circle is: {round(circumference, 2)}")
 
 
-hyp = float(input("Enter the length of the hypotenuse: "))
+# hyp = float(input("Enter the length of the hypotenuse: "))
 
-b = float(input("enter the length of the base: "))
+# b = float(input("enter the length of the base: "))
 
-h = math.sqrt(math.pow(hyp, 2) - math.pow(b, 2))
-print(f"The length of the height is: {round(h, 2)}")
-
-
+# h = math.sqrt(math.pow(hyp, 2) - math.pow(b, 2))
+# print(f"The length of the height is: {round(h, 2)}")
 
 
+# if = Do some code only if some condition id True
+#.    Else = Do somethoing else
 
 
+# age = int(input("Enter your age: "))
+# if age >= 18:
+#     print("You are now signed up for the newsletter!")
+# elif age < 0:
+#     print("Invalid age")
+# elif age >= 100:
+#     print("You are too old to sign up for the newsletter")
+# else:
+#     print("Sorry, you must be atleast 18 years and above")
 
+# response = input("Would you like food? (yes/no): ")
+# if response.lower() == "yes":
+#     print("Here is some food for you: ")
+# elif response.lower() == "no":
+#     print("Okay, maybe next time!")
+# else:
+#     print("Invalid response please enter yes or no")
 
+# name = input("Enter your name: ")
+# if name == "":
+#     print("You did not enter a name!")
+# else:
+#     print(f"Hello {name}!")
+
+# for_sale = input("Is this item for sale? (yes/no):")
+# if for_sale.lower() == "yes":
+#     price = float(input("Enter the price of the item: "))
+#     print(f"The price of the item is: ${price}")
+# elif for_sale.lower() == "no":
+#     print("This item is not for sale")
+# else:
+#     print("Invalid response please enter yes or no")
+
+online = False
+if online:
+    print("The user is online")
+else:
+    print("The user is offline")
+    
 
