@@ -222,10 +222,44 @@ import math
 # else:
 #     print("Invalid response please enter yes or no")
 
-online = False
-if online:
-    print("The user is online")
+# online = False
+# if online:
+#     print("The user is online")
+# else:
+#     print("The user is offline")
+
+# Python Calculator
+
+# num1 = float(input("Enter first number: "))
+# num2 = float(input("Enter second number: "))
+# operator = input("Enter an operator (+, -, *, /): ")
+
+# if operator == "+":
+#     result = num1 + num2
+# elif operator == "-":
+#     result = num1 - num2
+# elif operator == "*":
+#     result = num1 * num2
+# elif operator == "/":
+#     result = num1 / num2
+# else:
+#     print("Invalid operator")
+
+# print(f"The result is: {result}")
+
+#Python weight converter
+weight = float(input("Enter your weight: "))
+unit = input("Kilogram or Pounds? (K or lb): ")
+
+if unit.lower() == "k":
+    converted_weight = weight * 2.205
+    print(f"Your weight is: {converted_weight} lbs")
+
+elif unit.lower() == "lb":
+    converted_weight = weight / 2.205
+    print(f"Your weight is: {converted_weight} kg")
+
 else:
-    print("The user is offline")
-    
+    print("Invalid unit")
+
 
