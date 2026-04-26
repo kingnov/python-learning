@@ -248,18 +248,29 @@ import math
 # print(f"The result is: {result}")
 
 #Python weight converter
-weight = float(input("Enter your weight: "))
-unit = input("Kilogram or Pounds? (K or lb): ")
+# weight = float(input("Enter your weight: "))
+# unit = input("Kilogram or Pounds? (K or lb): ")
 
-if unit.lower() == "k":
-    converted_weight = weight * 2.205
-    print(f"Your weight is: {converted_weight} lbs")
+# if unit.lower() == "k":
+#     converted_weight = weight * 2.205
+#     print(f"Your weight is: {converted_weight} lbs")
 
-elif unit.lower() == "lb":
-    converted_weight = weight / 2.205
-    print(f"Your weight is: {converted_weight} kg")
+# elif unit.lower() == "lb":
+#     converted_weight = weight / 2.205
+#     print(f"Your weight is: {converted_weight} kg")
 
+# else:
+#     print("Invalid unit")
+
+
+temp = float(input("Enter temperature: "))
+unit = input("Is tis temperature in celcius or fahrenheit? (C or F): ")
+if unit.lower() == "c":
+    converted_temperature = (temp * 9/5) + 32
+    print(f"The temperature in fahrenheit is: {converted_temperature} F")
+elif unit.lower() == "f":
+    converted_temperature = (temp - 32) * 5/9
+    print(f"The temperature in celcius is: {converted_temperature} C")
 else:
     print("Invalid unit")
-
-
+    
