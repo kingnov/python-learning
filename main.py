@@ -358,12 +358,26 @@ import math
 #username must not contain spaces
 #username must not contain digits
 
-username = input("Enter a username: ")
-if len(username) > 12:
-    print("Username must not be more than 12 characters")
-elif " " in username:
-    print("The username must not contain spaces")
-elif any(char.isdigit() for char in username):
-    print("The username must not contain digits")
-else:
-    print(f"username {username} is valid!")
+# username = input("Enter a username: ")
+# if len(username) > 12:
+#     print("Username must not be more than 12 characters")
+# elif " " in username:
+#     print("The username must not contain spaces")
+# elif any(char.isdigit() for char in username):
+#     print("The username must not contain digits")
+# else:
+#     print(f"username {username} is valid!")
+
+# String indexing = accessing elements of a sequence using [] (indexing operator)
+#            [start : end : step]
+credit_number = "1234-5678-9012-3456"
+print(credit_number[0])
+print(credit_number[0:4])
+print(credit_number[5:9])
+print(credit_number[5:])
+print(credit_number[-1])
+print(credit_number[::2]) # print every other character
+last_digits = credit_number[-4:]
+print(f"XXXX-XXXX-XXXX-{last_digits}")
+credit_number = credit_number[::-1] # reverse the string
+print(credit_number)
