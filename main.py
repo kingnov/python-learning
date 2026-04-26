@@ -347,8 +347,23 @@ import math
 # print(result)
 # print(f"Hello {name}!")
 
-phone_number = input("Enter your phone number: ")
+# phone_number = input("Enter your phone number: ")
 # # result = phone_number.count("-") # count the number of dashes in the phone number
 # print(f"The number of dashes in the phone number is: {result}")
-phone_number = phone_number.replace("-", " ") # replace dashes with spaces
-print(f"Your phone number is: {phone_number}")
+# phone_number = phone_number.replace("-", " ") # replace dashes with spaces
+# print(f"Your phone number is: {phone_number}")
+
+# validate user input exercise
+# username is not more than 12 characters
+#username must not contain spaces
+#username must not contain digits
+
+username = input("Enter a username: ")
+if len(username) > 12:
+    print("Username must not be more than 12 characters")
+elif " " in username:
+    print("The username must not contain spaces")
+elif any(char.isdigit() for char in username):
+    print("The username must not contain digits")
+else:
+    print(f"username {username} is valid!")
