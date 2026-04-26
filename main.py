@@ -263,14 +263,43 @@ import math
 #     print("Invalid unit")
 
 
-temp = float(input("Enter temperature: "))
-unit = input("Is tis temperature in celcius or fahrenheit? (C or F): ")
-if unit.lower() == "c":
-    converted_temperature = (temp * 9/5) + 32
-    print(f"The temperature in fahrenheit is: {converted_temperature} F")
-elif unit.lower() == "f":
-    converted_temperature = (temp - 32) * 5/9
-    print(f"The temperature in celcius is: {converted_temperature} C")
-else:
-    print("Invalid unit")
-    
+# temp = float(input("Enter temperature: "))
+# unit = input("Is tis temperature in celcius or fahrenheit? (C or F): ")
+# if unit.lower() == "c":
+#     converted_temperature = (temp * 9/5) + 32
+#     print(f"The temperature in fahrenheit is: {converted_temperature} F")
+# elif unit.lower() == "f":
+#     converted_temperature = (temp - 32) * 5/9
+#     print(f"The temperature in celcius is: {converted_temperature} C")
+# else:
+#     print("Invalid unit")
+
+# logial operators = evaluate multiple conditions at the same time (and, or, not)
+#                    or = at least one condition is true
+#                    and = all conditions must be true
+#                    not = reverses the result, returns false if the result is true
+
+# temp = 25
+# is_raining = False
+# if temp > 35 or temp < 0 or is_raining:
+#     print("the outdoor event is cancelled")
+# else:
+#     print("The outdoor event is still scheduled to take place")
+
+temp = 25
+is_sunny = True
+if temp >+ 30 and is_sunny:
+    print("Its a great day for the picnic")
+    print("It is SUNNY 🌞")
+elif temp <= 0 and is_sunny:
+    print("Its cold outside")
+    print("It is CLOUDY ☁️")
+elif temp < 30 and temp > 0 and is_sunny:
+    print("It's a nice day for the picnic")
+    print("It is PARTLY CLOUDY 🌤️")
+elif temp <= 0 and not is_sunny:
+    print("Its cold outside")
+    print("It is CLOUDY ☁️")
+elif temp < 30 and temp > 0 and not is_sunny:
+    print("It's a nice day for the picnic")
+    print("It is CLOUDY ☁️")
