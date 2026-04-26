@@ -286,20 +286,45 @@ import math
 # else:
 #     print("The outdoor event is still scheduled to take place")
 
-temp = 25
-is_sunny = True
-if temp >+ 30 and is_sunny:
-    print("Its a great day for the picnic")
-    print("It is SUNNY 🌞")
-elif temp <= 0 and is_sunny:
-    print("Its cold outside")
-    print("It is CLOUDY ☁️")
-elif temp < 30 and temp > 0 and is_sunny:
-    print("It's a nice day for the picnic")
-    print("It is PARTLY CLOUDY 🌤️")
-elif temp <= 0 and not is_sunny:
-    print("Its cold outside")
-    print("It is CLOUDY ☁️")
-elif temp < 30 and temp > 0 and not is_sunny:
-    print("It's a nice day for the picnic")
-    print("It is CLOUDY ☁️")
+# temp = 25
+# is_sunny = True
+# if temp >+ 30 and is_sunny:
+#     print("Its a great day for the picnic")
+#     print("It is SUNNY 🌞")
+# elif temp <= 0 and is_sunny:
+#     print("Its cold outside")
+#     print("It is CLOUDY ☁️")
+# elif temp < 30 and temp > 0 and is_sunny:
+#     print("It's a nice day for the picnic")
+#     print("It is PARTLY CLOUDY 🌤️")
+# elif temp <= 0 and not is_sunny:
+#     print("Its cold outside")
+#     print("It is CLOUDY ☁️")
+# elif temp < 30 and temp > 0 and not is_sunny:
+#     print("It's a nice day for the picnic")
+#     print("It is CLOUDY ☁️")
+
+# conditional expression = A one-line shortcut for the if-else statement (ternary operator)
+#.                         print or assign one of two values based on a condition
+#.                         X if condition else Y
+
+# num = 5
+# print("Positive" if num > 0 else "Negative")
+
+# num = 6
+# a = 6
+# b = 7
+# age = 25
+# temp = 30
+user_role = "admin"
+
+# print("EVEN" if num % 2 == 0 else "ODD")
+# max_num = a if a > b else b
+# print(f"The maximum number is: {max_num}")
+# status = "Adult" if age >= 18 else "Minor"
+# print(f"You are an {status}")
+# weather = "HOT" if temp >+ 27 else "COLD"
+# print(f"The weather is: {weather}")
+access_level = "Full Access" if user_role == "admin" else "Limited Access"
+print(f"Your access level is: {access_level}")
+
