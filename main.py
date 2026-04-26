@@ -316,7 +316,7 @@ import math
 # b = 7
 # age = 25
 # temp = 30
-user_role = "admin"
+# user_role = "admin"
 
 # print("EVEN" if num % 2 == 0 else "ODD")
 # max_num = a if a > b else b
@@ -325,6 +325,30 @@ user_role = "admin"
 # print(f"You are an {status}")
 # weather = "HOT" if temp >+ 27 else "COLD"
 # print(f"The weather is: {weather}")
-access_level = "Full Access" if user_role == "admin" else "Limited Access"
-print(f"Your access level is: {access_level}")
+# access_level = "Full Access" if user_role == "admin" else "Limited Access"
+# print(f"Your access level is: {access_level}")
 
+# strings
+# name = input("Enter your full name: ")
+# result = len(name)
+# print(f"Your name has {result} characters")
+# result = name.find(" ") # find the index of the first space character
+# print(f"The index of the space character is: {result}")
+# result = name.rfind("i") # find the index of the last space character
+# print(f"The index of the last space character is: {result}")
+# name = name.capitalize() # capitalize the first letter of each word
+
+# name = name.upper() # convert the name to uppercase
+# name = name.lower()
+# result = name.isdigit() # check if the name contains only digits
+# print(result)
+
+# result = name.isalpha() # check if the name contains only letters
+# print(result)
+# print(f"Hello {name}!")
+
+phone_number = input("Enter your phone number: ")
+# # result = phone_number.count("-") # count the number of dashes in the phone number
+# print(f"The number of dashes in the phone number is: {result}")
+phone_number = phone_number.replace("-", " ") # replace dashes with spaces
+print(f"Your phone number is: {phone_number}")
