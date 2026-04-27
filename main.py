@@ -397,10 +397,39 @@ import math
 # := = place the sign before the number and any padding after the sign
 # :  = insert a space before positive numbers and a minus sign before negative numbers
 
-price1 = 3.14159
-price2 = -987.65
-price3 = 12.34
+# price1 = 3.14159
+# price2 = -987.65
+# price3 = 12.34
 
-print(f"Price 1 is: {price1:.2f}")
-print(f"Price 2 is: {price2:+.2f}")
-print(f"Price 3 is: {price3:10.2f}")
+# print(f"Price 1 is: {price1:.2f}")
+# print(f"Price 2 is: {price2:+.2f}")
+# print(f"Price 3 is: {price3:10.2f}")
+
+# while loop = execute some code WHILE some condition remain true
+# name = input("Enter your name: ")
+# while name == "": #while this condition remains true,
+#     print("You did not enter a name!")# execute this code forever
+#     name = input("Enter your name: ")
+# print(f"Hello {name}!")
+
+# age = int(input(f"Enter your age: "))
+# while age < 0:
+#     print("Invalid age! Age cannot be negative.")
+#     age = int(input(f"Enter your age: "))
+# print(f"You are {age} years old!")
+
+# food = input("What is your favorite food? (q to quit): ")
+# while not food.lower() == "q":
+#     print(f"You like {food}")
+#     food = input("What is your another favorite food? (q to quit): ")
+# print("bye!")
+
+num = int(input("Enter a number between 1 - 10: "))
+while num < 1 or num > 10:
+    print("Invalid number! Please enter a number between 1 and 10.")
+    num = int(input("Enter a number between 1 - 10: "))
+print(f"You entered: {num}")
+
+
+
+
