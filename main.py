@@ -432,29 +432,51 @@ import math
 
 # Python compound interest calculator
 
-principle = 0
-rate = 0
-time = 0
+# principle = 0
+# rate = 0
+# time = 0
 
-while principle <= 0:
-    principle = float(input("Enter the principle amount: "))
-    if principle <= 0:
-        print("Principle cant be less than or equal to zero")
-while rate <= 0:
-    rate = float(input("Enter the interest rate (as a percentage): "))
-    if rate <= 0:
-        print("Rate cant be less than or equal to zero")
-while time <= 0:
-    time = int(input("Enter the time (in years): "))
-    if time <= 0:
-        print("Time cant be less than or equal to zero")
-# print(f"Principle: ${principle}")
-# print(f"Rate: {rate}%")
-# print(f"Time: {time} years")
+# while True:
+#     principle = float(input("Enter the principle amount: "))
+#     if principle <= 0:
+#         print("Principle cant be less than or equal to zero")
+# while True:
+#     rate = float(input("Enter the interest rate (as a percentage): "))
+#     if rate <= 0:
+#         print("Rate cant be less than or equal to zero")
+#     else:
+#         break
+# while True:
+#     time = int(input("Enter the time (in years): "))
+#     if time <= 0:
+#         print("Time cant be less than or equal to zero")
+#     else:
+#         break
+# # print(f"Principle: ${principle}")
+# # print(f"Rate: {rate}%")
+# # print(f"Time: {time} years")
 
-Total_amount = principle * pow(1 + (rate / 100), time)
-# Total_amount = principle * (1 + (rate / 100)) ** time
-print(f"The total amount after {time} years is: ${Total_amount:.2f}")
+# Total_amount = principle * pow(1 + (rate / 100), time)
+# # Total_amount = principle * (1 + (rate / 100)) ** time
+# print(f"The total amount after {time} years is: ${Total_amount:.2f}")
 
 
+# for loops = execute a block of code a fixed number of times.
+#.            you can iterate over a range , string, list, sequence, etc.
+
+# for x in reversed(range(1, 11)):
+#     print(x)
+# print("HAPPY NEW YEAR!")
+
+# for x in range(1, 21):
+#     if x == 13:
+#         continue # skips number 13
+#     else:
+#         print(x)
+
+for x in range(1, 21):
+    if x == 13:
+        break # stops the loop when it reaches number 13
+    else:
+        print(x)
 
