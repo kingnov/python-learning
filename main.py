@@ -424,12 +424,37 @@ import math
 #     food = input("What is your another favorite food? (q to quit): ")
 # print("bye!")
 
-num = int(input("Enter a number between 1 - 10: "))
-while num < 1 or num > 10:
-    print("Invalid number! Please enter a number between 1 and 10.")
-    num = int(input("Enter a number between 1 - 10: "))
-print(f"You entered: {num}")
+# num = int(input("Enter a number between 1 - 10: "))
+# while num < 1 or num > 10:
+#     print("Invalid number! Please enter a number between 1 and 10.")
+#     num = int(input("Enter a number between 1 - 10: "))
+# print(f"You entered: {num}")
 
+# Python compound interest calculator
+
+principle = 0
+rate = 0
+time = 0
+
+while principle <= 0:
+    principle = float(input("Enter the principle amount: "))
+    if principle <= 0:
+        print("Principle cant be less than or equal to zero")
+while rate <= 0:
+    rate = float(input("Enter the interest rate (as a percentage): "))
+    if rate <= 0:
+        print("Rate cant be less than or equal to zero")
+while time <= 0:
+    time = int(input("Enter the time (in years): "))
+    if time <= 0:
+        print("Time cant be less than or equal to zero")
+# print(f"Principle: ${principle}")
+# print(f"Rate: {rate}%")
+# print(f"Time: {time} years")
+
+Total_amount = principle * pow(1 + (rate / 100), time)
+# Total_amount = principle * (1 + (rate / 100)) ** time
+print(f"The total amount after {time} years is: ${Total_amount:.2f}")
 
 
 
