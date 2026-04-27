@@ -370,14 +370,37 @@ import math
 
 # String indexing = accessing elements of a sequence using [] (indexing operator)
 #            [start : end : step]
-credit_number = "1234-5678-9012-3456"
-print(credit_number[0])
-print(credit_number[0:4])
-print(credit_number[5:9])
-print(credit_number[5:])
-print(credit_number[-1])
-print(credit_number[::2]) # print every other character
-last_digits = credit_number[-4:]
-print(f"XXXX-XXXX-XXXX-{last_digits}")
-credit_number = credit_number[::-1] # reverse the string
-print(credit_number)
+# credit_number = "1234-5678-9012-3456"
+# print(credit_number[0])
+# print(credit_number[0:4])
+# print(credit_number[5:9])
+# print(credit_number[5:])
+# print(credit_number[-1])
+# print(credit_number[::2]) # print every other character
+# last_digits = credit_number[-4:]
+# print(f"XXXX-XXXX-XXXX-{last_digits}")
+# credit_number = credit_number[::-1] # reverse the string
+# print(credit_number)
+
+
+# format specifiers = {:flags} format a value based on what 
+#                               flags are inserted
+
+# .(number)f = format a number to a fixed number of decimal places
+# :(number) = format a number to a fixed width (padding with spaces)
+# :03 = format a number to a fixed width and pad with zeros
+# :< = left align the value within the specified width
+# :> = right align the value within the specified width
+# :^ = center align the value within the specified width
+# :+ = include a plus sign for positive numbers
+# :, = include a comma as a thousand separator
+# := = place the sign before the number and any padding after the sign
+# :  = insert a space before positive numbers and a minus sign before negative numbers
+
+price1 = 3.14159
+price2 = -987.65
+price3 = 12.34
+
+print(f"Price 1 is: {price1:.2f}")
+print(f"Price 2 is: {price2:+.2f}")
+print(f"Price 3 is: {price3:10.2f}")
