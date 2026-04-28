@@ -482,20 +482,46 @@ import math
 
 
 # countdown timer inpython
-import time
+# import time
 
-# time.sleep(5) # pause the program for 1 second
-# print("TIME IS UP!")
-my_time = int(input("Enter the time in seconds: "))
-# for x in range(0, my_time):
-for x in range(my_time, 0, -1):
-    seconds = x % 60
-    minutes = int(x / 60) % 60
-    hours = int(x / 3600) 
+# # time.sleep(5) # pause the program for 1 second
+# # print("TIME IS UP!")
+# my_time = int(input("Enter the time in seconds: "))
+# # for x in range(0, my_time):
+# for x in range(my_time, 0, -1):
+#     seconds = x % 60
+#     minutes = int(x / 60) % 60
+#     hours = int(x / 3600) 
 
-    print(f"{hours:02d}:{minutes:02d}:{seconds:02d}")
-    time.sleep(1)
-print("TIME IS UP!")   
+#     print(f"{hours:02d}:{minutes:02d}:{seconds:02d}")
+#     time.sleep(1)
+# print("TIME IS UP!")   
+
+# nested loop = A loop within another loop (outer loop, inner loop)
+#.              outer loop:# executes once for each iteration of the inner loop
+#                     inner loop: # executes once for each iteration of the outer loop
+
+
+# rows = int(input("Enter the number of rows: "))
+# columns = int(input("Enter the number of columns: "))
+# symbol = input("Enter a symbol to use: ")
+
+# # for x in range(3):
+# #     for y in range (1, 10):
+# #         print(y, end="")
+# #     print()
+# for x in range(rows):
+#     for y in range(columns):
+#         print(symbol, end="")
+#     print()
+    
+# collection = single "variable" used to store multiple values
+# List = [] oredered and changeable. Duplicates OK
+# Set = {} unordered and immutable. but Add/Remove OK. No duplicates
+# Turple = () oredered and uncahngeable. Duplicates OK
+
+
+
 
 
 
