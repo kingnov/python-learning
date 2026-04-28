@@ -520,7 +520,27 @@ import math
 # Set = {} unordered and immutable. but Add/Remove OK. No duplicates
 # Turple = () oredered and uncahngeable. Duplicates OK
 
+fruits = ["apple", "banana", "orange", "grape", "coconut"]
+# print(dir(fruits))
+# print(help(fruits))
+# print(len(fruits))
+# print("apple" in fruits) # check if apple is in the list
+# print("jackfruit" in fruits) # check if jackfruit is in the list
 
+fruits[0] = "avocado" # change the first element of the list
+# print(fruits)
+# fruits.append("mango") # add an element to the end of the list
+# fruits.remove("banana") # remove an element from the list
+# fruits.insert(0, "kiwi") # insert an element at a specific index
+# fruits.sort() # sort the list in alphabetical order
+# fruits.reverse() # reverse the order of the list
+# fruits.clear() # remove all elements from the list
+print(fruits.index("orange")) # find the index of an element in the list
+
+# for fruit in fruits:
+#     print(fruit)
+
+# print(fruits[::-1])
 
 
 
