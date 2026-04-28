@@ -474,9 +474,28 @@ import math
 #     else:
 #         print(x)
 
-for x in range(1, 21):
-    if x == 13:
-        break # stops the loop when it reaches number 13
-    else:
-        print(x)
+# for x in range(1, 21):
+#     if x == 13:
+#         break # stops the loop when it reaches number 13
+#     else:
+#         print(x)
+
+
+# countdown timer inpython
+import time
+
+# time.sleep(5) # pause the program for 1 second
+# print("TIME IS UP!")
+my_time = int(input("Enter the time in seconds: "))
+# for x in range(0, my_time):
+for x in range(my_time, 0, -1):
+    seconds = x % 60
+    minutes = int(x / 60) % 60
+    hours = int(x / 3600) 
+
+    print(f"{hours:02d}:{minutes:02d}:{seconds:02d}")
+    time.sleep(1)
+print("TIME IS UP!")   
+
+
 
