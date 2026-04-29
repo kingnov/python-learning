@@ -542,15 +542,37 @@ import math
 
 # print(fruits[::-1])
 
-fruits = {"apple", "banana", "orange", "grape", "coconut"}
+# fruits = {"apple", "banana", "orange", "grape", "coconut"}
 
 # print(fruits)
 # print(dir(fruits))
 # print(help(fruits))
 # print(len(fruits))
-# fruits.add("beetroots")
-# fruits.remove("banana")
-# fruits.pop() # remove a random element from the set
-fruits.add("apple") # adding a duplicate element does not change the set
+# # fruits.add("beetroots")
+# # fruits.remove("banana")
+# # fruits.pop() # remove a random element from the set
+# fruits.add("apple") # adding a duplicate element does not change the set
 
-print(fruits)
+# print(fruits)
+
+# Shopping cart program
+
+foods = []
+prices = []
+total = 0
+
+while True:
+    food = input("Enter the food to buy (q to quit): ")
+    if food.lower() == "q":
+        break
+    else:
+        price = float(input("Enter the price of a {food}: $"))
+        foods.append(food)
+        prices.append(price)
+print("-----YOUR CART-----")
+for food in foods:
+    print(food, end=" ")
+for price in prices:
+    total = total + price
+print()
+print(f"Your total is: ${total}")
